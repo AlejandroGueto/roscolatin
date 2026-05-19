@@ -173,7 +173,7 @@
             <!-- EL ROSCO -->
             <div class="rosco-wrapper flex items-center justify-center">
                 <div id="timer-container" class="absolute z-10 flex flex-col items-center justify-center bg-slate-900/90 rounded-full w-24 h-24 md:w-32 md:h-32 border-4 border-amber-500/50 shadow-[0_0_30px_rgba(245,158,11,0.3)] backdrop-blur-md transition-colors">
-                    <span id="timer" class="text-4xl md:text-5xl font-black text-white">600</span>
+                    <span id="timer" class="text-4xl md:text-5xl font-black text-white">2000</span>
                 </div>
                 <div id="rosco-letters" class="absolute inset-0 z-20"></div>
             </div>
@@ -449,7 +449,7 @@
                 { name: 'Equipo 3', score: 0, colorClasses: 'border-emerald-500 text-emerald-400 bg-emerald-900/30 shadow-[0_0_20px_#10b981]' },
                 { name: 'Equipo 4', score: 0, colorClasses: 'border-fuchsia-500 text-fuchsia-400 bg-fuchsia-900/30 shadow-[0_0_20px_#d946ef]' }
             ],
-            currentTeam: 0, time: 600, timerInterval: null, isActive: false, modalOpen: false,
+            currentTeam: 0, time: 1500, timerInterval: null, isActive: false, modalOpen: false,
 
             start() {
                 try {
@@ -468,7 +468,7 @@
 
                     this.currentTeam = 0;
                     this.teams.forEach(t => t.score = 0);
-                    this.time = 600; // 10 Minutos
+                    this.time = 1500; // 25 Minutos
                     this.modalOpen = false;
                     
                     document.getElementById('start-screen').style.display = 'none';
